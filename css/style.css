@@ -16,6 +16,42 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes loadingBar-90 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@keyframes loadingBar-75 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 75%; } }
+
+@keyframes loadingBar-70 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+
+@keyframes loadingBar-65 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 65%; } }
+
+@keyframes loadingBar-60 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+
+@keyframes loadingBar-50 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 50%; } }
+
 *,
 *::after,
 *::before {
@@ -75,16 +111,54 @@ body {
   .skills__bar {
     width: 100%;
     background-color: aqua;
-    text-align: center; }
+    text-align: right;
+    position: relative;
+    height: 3rem;
+    line-height: 3rem; }
   .skills__percent {
+    height: 100%;
+    color: white;
     background-color: red;
-    padding: 0.2rem; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left; }
     .skills__percent--html {
-      width: 90%; }
+      width: 90%;
+      animation: loadingBar-90 1.5s ease-out; }
     .skills__percent--css {
-      width: 90%; }
+      width: 90%;
+      animation: loadingBar-90 1.5s ease-out; }
     .skills__percent--javascript {
-      width: 80%; }
+      width: 75%;
+      animation: loadingBar-75 1.5s ease-out; }
+    .skills__percent--react {
+      width: 75%;
+      animation: loadingBar-75 1.5s ease-out; }
+    .skills__percent--angular {
+      width: 50%;
+      animation: loadingBar-50 1.5s ease-out; }
+    .skills__percent--nodejs {
+      width: 65%;
+      animation: loadingBar-65 1.5s ease-out; }
+    .skills__percent--java {
+      width: 60%;
+      animation: loadingBar-60 1.5s ease-out; }
+    .skills__percent--python {
+      width: 50%;
+      animation: loadingBar-50 1.5s ease-out; }
+    .skills__percent--mongodb {
+      width: 65%;
+      animation: loadingBar-65 1.5s ease-out; }
+    .skills__percent--restfulapi {
+      width: 70%;
+      animation: loadingBar-70 1.5s ease-out; }
+  .skills__text--name {
+    font-size: 1.2rem;
+    margin-left: 1rem; }
+  .skills__text--percent {
+    font-size: 1.2rem;
+    margin-right: 1rem; }
 
 .header {
   height: 100vh;
