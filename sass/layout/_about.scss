@@ -1,0 +1,48 @@
+.about {
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  padding: 10rem 0;
+  display: flex;
+
+  &__left-container {
+    flex: 0 0 50%;
+  }
+
+  &__right-container {
+    flex: 0 0 50%;
+  }
+}
+
+// Skills
+.skills {
+  width: 80%;
+
+  &__group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__bar {
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+  }
+
+  &__percent {
+    background-color: red;
+    padding: 0.2rem;
+
+    &--html {
+      width: 90%;
+    }
+
+    &--css {
+      width: 90%;
+    }
+
+    &--javascript {
+      width: 80%;
+    }
+  }
+}

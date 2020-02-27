@@ -1,0 +1,14 @@
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  // CHECK HOW THIS WORK, MAYBE DELETE THIS LATER
+  // @include respond(tab-portrait) {
+  //   max-width: 875px;
+  // }
+
+  // @include respond(phone) {
+  //   width: auto;
+  // }
+}

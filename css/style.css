@@ -1,0 +1,125 @@
+/*
+0 - 450px       Small Phone
+450 - 600px:    Phone
+600-900px:      Table portrait
+900-1200px:     Table landscape
+1200-1800px:    Is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-portrait
+- tab-lanscape
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 28.125em) {
+    html {
+      font-size: 43.75%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #000000; }
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.about {
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  padding: 10rem 0;
+  display: flex; }
+  .about__left-container {
+    flex: 0 0 50%; }
+  .about__right-container {
+    flex: 0 0 50%; }
+
+.skills {
+  width: 80%; }
+  .skills__group {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .skills__bar {
+    width: 100%;
+    background-color: aqua;
+    text-align: center; }
+  .skills__percent {
+    background-color: red;
+    padding: 0.2rem; }
+    .skills__percent--html {
+      width: 90%; }
+    .skills__percent--css {
+      width: 90%; }
+    .skills__percent--javascript {
+      width: 80%; }
+
+.header {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .header__overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  .header__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 3;
+    text-align: center; }
+    .header__heading h1 {
+      font-size: 5rem; }
+    .header__heading h3 {
+      font-size: 3rem; }
+    .header__heading button {
+      padding: 1rem 3rem;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      color: white;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      transition: 0.5s ease; }
+      .header__heading button:hover {
+        background-color: #c4bbf8;
+        border-color: #c4bbf8; }

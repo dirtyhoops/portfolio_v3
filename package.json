@@ -1,0 +1,17 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Daryll Osis",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Daryll Osis",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
