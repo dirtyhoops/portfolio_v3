@@ -87,30 +87,72 @@ body {
   line-height: 1.7;
   color: #000000; }
 
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.text-aboutme {
+  font-size: 1.5rem; }
+
 .container {
   padding: 0 1rem;
   margin: 0 auto;
   max-width: 1200px; }
 
+.u-margin-bottom-sm {
+  margin-bottom: 1rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 3rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 6rem; }
+
+.u-margin-top-sm {
+  margin-top: 1rem; }
+
+.u-margin-top-md {
+  margin-top: 3rem; }
+
+.u-margin-top-lg {
+  margin-top: 6rem; }
+
 .about {
-  min-height: 100vh;
-  background-color: white;
   width: 100%;
-  padding: 10rem 0;
-  display: flex; }
-  .about__left-container {
-    flex: 0 0 50%; }
-  .about__right-container {
-    flex: 0 0 50%; }
+  padding: 10rem 0; }
+  .about__header {
+    flex: 0 0 100%;
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+    margin-bottom: 10rem; }
+  .about__container {
+    display: flex;
+    flex-wrap: wrap; }
+    .about__container--left {
+      flex: 0 0 50%; }
+    .about__container--right {
+      flex: 0 0 50%;
+      text-align: center; }
+  .about__info__image {
+    background-color: #247ba0;
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto; }
 
 .skills {
   width: 80%; }
   .skills__group {
     width: 100%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.35rem; }
   .skills__bar {
     width: 100%;
-    background-color: aqua;
+    background-color: #b2dbbf;
     text-align: right;
     position: relative;
     height: 3rem;
@@ -118,7 +160,7 @@ body {
   .skills__percent {
     height: 100%;
     color: white;
-    background-color: red;
+    background-color: #ff1654;
     position: absolute;
     top: 0;
     left: 0;
@@ -160,6 +202,18 @@ body {
     font-size: 1.2rem;
     margin-right: 1rem; }
 
+.quality {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .quality__box {
+    flex: 0 0 23%;
+    height: 25rem;
+    text-align: center; }
+    .quality__box img {
+      width: 60%;
+      fill: red; }
+
 .header {
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -197,3 +251,11 @@ body {
       .header__heading button:hover {
         background-color: #c4bbf8;
         border-color: #c4bbf8; }
+
+.section-about {
+  min-height: 100vh;
+  background-color: white; }
+
+.section-project {
+  min-height: 100vh;
+  background-color: aliceblue; }
