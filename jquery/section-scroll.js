@@ -55,3 +55,10 @@ $(document).ready(function() {
     $('nav ul').toggleClass('showing');
   });
 });
+
+// for burger. It changes the active state
+$(document).ready(function() {
+  $('.nav__burger').on('click', function() {
+    $('.hamburger').toggleClass('is-active');
+  });
+});

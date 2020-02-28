@@ -10,6 +10,7 @@
   &__container {
     display: flex;
     line-height: 6rem;
+    flex-wrap: wrap;
   }
 
   &__logo {
@@ -24,16 +25,16 @@
   &__links {
     flex: 0 0 93%;
     text-align: right;
+    transition: all 0.5s;
 
     & ul {
       list-style: none;
+      overflow: hidden;
 
       & li {
         display: inline-block;
-        padding: 0 2rem;
-        margin: 0 0.5rem;
-        text-align: center;
 
+        text-align: center;
         cursor: pointer;
       }
     }
@@ -41,7 +42,6 @@
 
   &__burger {
     flex: 0 0 0%;
-    color: white;
     text-align: right;
     padding-right: 2rem;
     cursor: pointer;
@@ -50,39 +50,42 @@
 
   // Do the responsiveness, display none for links
   @include respond(phone) {
-    height: 9rem;
-    // background-color: $color-palette-1-darkest;
+    height: 7rem;
+    padding-top: 0;
+    background-color: $color-palette-1-darkest;
 
     &__container {
-      // line-height: 9rem;
+      line-height: 8rem;
       justify-content: space-between;
     }
 
     &__logo {
       flex: 0 0 20%;
-      padding-left: 2rem;
-      font-size: 3.5rem;
+      padding-left: 3rem;
+      font-size: 4rem;
     }
 
     &__links {
-      flex: 0 0 0%;
-      display: none;
-
-      .showing {
-        max-height: 60vh;
-      }
+      flex: 0 0 100%;
+      order: 2;
 
       & ul {
+        background: $color-black;
+        transition: all 0.5s;
+        max-height: 0;
+        margin-top: -1.5rem;
+
         & li {
           width: 100%;
-          padding: 2rem 0;
-          margin: 2rem 0;
+          margin-bottom: 1rem;
+          font-size: 2.5rem;
         }
       }
     }
 
     &__burger {
       flex: 0 0 20%;
+      padding-right: 3rem;
       display: block;
     }
   }
@@ -92,4 +95,12 @@
   height: 6rem;
   padding-top: 0;
   background-color: $color-palette-1-darkest;
+
+  @include respond(phone) {
+    height: 8rem;
+  }
+}
+
+ul.showing {
+  max-height: 60vh;
 }
