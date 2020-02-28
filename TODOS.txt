@@ -1,0 +1,4 @@
+1. ADD THIS ------ I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+2. Make the images for the projects smaller, so it loads faster.
+3. Add a line or some simple design that animates with the main text header
+4. Add CSS to header h1 and h3 and button

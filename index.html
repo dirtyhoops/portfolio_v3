@@ -19,8 +19,8 @@
     />
 
     <!-- jquery and js -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="/jquery/navshrink.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery/section-scroll.js"></script>
 
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -34,12 +34,14 @@
       <div class="header__heading">
         <h1>Hello! I'm Daryll Osis</h1>
         <h3>I'm a full-stack web developer</h3>
-        <button>View my projects</button>
+        <button class="button-header" id="button-header">
+          View my projects
+        </button>
       </div>
     </header>
-    <section class="section-about">
+    <section class="section-about" id="section-about">
       <div class="about container">
-        <div class="about__header">
+        <div class="main-header">
           <p class="heading-primary">about me</p>
         </div>
         <div class="about__container u-margin-bottom-lg">
@@ -147,16 +149,70 @@
         <div class="quality">
           <div class="quality__box">
             <img src="/img/responsive-design.svg" alt="responsive icon" />
-            <p>Responsive Layout</p>
+            <p>Responsive Design</p>
           </div>
-          <div class="quality__box"></div>
-          <div class="quality__box"></div>
-          <div class="quality__box"></div>
+          <div class="quality__box">RESTful API</div>
+          <div class="quality__box">Write Clean Code</div>
+          <div class="quality__box">Fast Load Time</div>
         </div>
       </div>
     </section>
-    <section class="section-project">
-      <div class="project container">aa</div>
+    <section class="section-project" id="section-project">
+      <div class="project container">
+        <div class="main-header">
+          <p class="heading-primary">projects</p>
+        </div>
+        <div class="project__container">
+          <div class="project__box">
+            <div class="project__box--front project__box--front-1"></div>
+            <div class="project__box--back">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">Hyped Goods</p>
+                  <p class="project-stack">MERN Stack</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-hypedgoods';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project__box">
+            <p>HypedGoods</p>
+          </div>
+          <div class="project__box">
+            <p>HypedGoods</p>
+          </div>
+          <div class="project__box">
+            <p>HypedGoods</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="section-contact" id="section-contact">
+      <div class="contact container">
+        <div class="main-header">
+          <p class="heading-primary text-light-color">contact me</p>
+        </div>
+      </div>
+    </section>
+    <div class="section-footer">
+      <div class="footer container">
+        <div class="footer__icons-container">
+          <div class="footer__icon">
+            <p><i class="fab fa-linkedin-in"></i></p>
+          </div>
+          <div class="footer__icon">
+            <p><i class="fab fa-github"></i></p>
+          </div>
+          <div class="footer__icon">
+            <p><i class="fab fa-instagram"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,21 @@
+.footer {
+  &__icons-container {
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    background: pink;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 15px;
+
+    & p {
+      font-size: 2.5rem;
+    }
+  }
+}

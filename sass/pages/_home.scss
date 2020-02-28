@@ -1,9 +1,23 @@
 .section-about {
   min-height: 100vh;
+  padding: 10rem 0;
   background-color: white;
 }
 
 .section-project {
   min-height: 100vh;
+  padding: 10rem 0;
   background-color: aliceblue;
+}
+
+.section-contact {
+  min-height: 100vh;
+  padding: 10rem 0;
+  background-color: $color-palette-5;
+}
+
+.section-footer {
+  height: 25rem;
+  background: rgb(41, 35, 35);
+  padding: 5rem 0;
 }
