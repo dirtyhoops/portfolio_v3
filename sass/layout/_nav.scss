@@ -1,0 +1,53 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  z-index: 99;
+  color: $color-white;
+  height: 9rem;
+  padding-top: 3rem;
+
+  &__container {
+    display: flex;
+    line-height: 6rem;
+  }
+
+  &__logo {
+    flex: 0 0 7%;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__links {
+    flex: 0 0 93%;
+
+    & ul {
+      list-style: none;
+      text-align: right;
+
+      & li {
+        display: inline-block;
+        padding: 0 2rem;
+        margin: 0 0.5rem;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__burger {
+    flex: 0 0 0%;
+    display: none;
+  }
+
+  // Do the responsiveness, display none for links
+}
+
+.nav.dark {
+  height: 6rem;
+  padding-top: 0;
+  background-color: $color-palette-1-darkest;
+}
