@@ -28,7 +28,10 @@
     <title>Daryll Osis's Portfolio</title>
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <nav class="nav"></nav>
+
+    <!-- HEADER -->
     <header class="header">
       <div class="header__overlay"></div>
       <div class="header__heading">
@@ -39,6 +42,8 @@
         </button>
       </div>
     </header>
+
+    <!-- ABOUT ME SECTION -->
     <section class="section-about" id="section-about">
       <div class="about container">
         <div class="main-header">
@@ -130,7 +135,9 @@
             </div>
           </div>
           <div class="about__container--right">
-            <div class="about__info__image"></div>
+            <div class="about__info__image">
+              <img src="img/profilepic.jpg" alt="aboutme-profile-picture" />
+            </div>
             <p class="heading-secondary  u-margin-top-md  u-margin-bottom-sm">
               Who Am I?
             </p>
@@ -157,15 +164,18 @@
         </div>
       </div>
     </section>
+
+    <!-- PROJECT SECTION -->
     <section class="section-project" id="section-project">
       <div class="project container">
         <div class="main-header">
           <p class="heading-primary">projects</p>
         </div>
         <div class="project__container">
+          <!-- HYPED GOODS PROJECT BOX -->
           <div class="project__box">
             <div class="project__box--front project__box--front-1"></div>
-            <div class="project__box--back">
+            <div class="project__box--back project__box--back-1">
               <div class="project__info">
                 <div class="project__info__text">
                   <p class="project-name">Hyped Goods</p>
@@ -180,18 +190,101 @@
               </div>
             </div>
           </div>
+          <!-- SQRATCH XCHANGE PROJECT BOX -->
           <div class="project__box">
-            <p>HypedGoods</p>
+            <div class="project__box--front project__box--front-6"></div>
+            <div class="project__box--back project__box--back-2">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">Sqratch Xchange</p>
+                  <p class="project-stack">MERN Stack</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-sqratchxchange';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
           </div>
+          <!-- FIREHOUSE RESTAURANT PROJECT BOX -->
           <div class="project__box">
-            <p>HypedGoods</p>
+            <div class="project__box--front project__box--front-2"></div>
+            <div class="project__box--back project__box--back-1">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">FireHouse Restaurant</p>
+                  <p class="project-stack">SASS + JQuery</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-firehouse';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
           </div>
+          <!-- THEMOVIEDB PROJECT BOX -->
           <div class="project__box">
-            <p>HypedGoods</p>
+            <div class="project__box--front project__box--front-3"></div>
+            <div class="project__box--back project__box--back-2">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">The MovieDB</p>
+                  <p class="project-stack">Node.js + React</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-themoviedb';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- VAPE3ONE PROJECT BOX -->
+          <div class="project__box">
+            <div class="project__box--front project__box--front-4"></div>
+            <div class="project__box--back project__box--back-1">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">Vape3One</p>
+                  <p class="project-stack">Java + Spring + Hibernate</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-vape3one';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- HOOP FINDER PROJECT BOX -->
+          <div class="project__box">
+            <div class="project__box--front project__box--front-5"></div>
+            <div class="project__box--back project__box--back-2">
+              <div class="project__info">
+                <div class="project__info__text">
+                  <p class="project-name">Hoop Finder</p>
+                  <p class="project-stack">Python + Django + MySQL</p>
+                </div>
+                <button
+                  class="button-project"
+                  onclick="window.location.href = '#popup-hoopfinder';"
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CONTACT SECTION -->
     <section class="section-contact" id="section-contact">
       <div class="contact container">
         <div class="main-header">
@@ -199,6 +292,8 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <div class="section-footer">
       <div class="footer container">
         <div class="footer__icons-container">

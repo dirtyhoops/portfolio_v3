@@ -2,3 +2,7 @@
 2. Make the images for the projects smaller, so it loads faster.
 3. Add a line or some simple design that animates with the main text header
 4. Add CSS to header h1 and h3 and button
+5. CHANGE the color of section-project and project__box--back from ALICEBLUE to WHATEVER LOOKS GOOD (PALETTE RELATED)
+
+6. MAKE THE BACK OF THE PROJECT DIFFERENT COLOR (PALLETE COLOR)
+7. ADD Shadow to project box 

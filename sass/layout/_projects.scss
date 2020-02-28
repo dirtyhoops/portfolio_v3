@@ -10,7 +10,6 @@
     flex: 0 0 32%;
     height: 30rem;
     margin-bottom: 2%;
-    // border: 1px solid black;
     border-radius: 1rem;
 
     text-align: center;
@@ -30,28 +29,29 @@
       background-repeat: no-repeat;
       transition: all 1s ease;
 
+      // Just the diffent images for the front of the project box
       &-1 {
         background-image: url('/img/hypedgoods-1.png');
       }
 
       &-2 {
-        background-image: url('/img/hypedgoods-1.png');
+        background-image: url('/img/firehouse-1.png');
       }
 
       &-3 {
-        background-image: url('/img/hypedgoods-1.png');
+        background-image: url('/img/moviedb-1.png');
       }
 
       &-4 {
-        background-image: url('/img/hypedgoods-1.png');
+        background-image: url('/img/vape3one-1.png');
       }
 
       &-5 {
-        background-image: url('/img/hypedgoods-1.png');
+        background-image: url('/img/hoopfinder-1.png');
       }
 
       &-6 {
-        background-image: url('/img/hypedgoods-1.png');
+        background-image: url('/img/sqratchxchange-1.png');
       }
     }
 
@@ -59,9 +59,20 @@
       height: 100%;
       width: 100%;
       position: absolute;
-      background-color: white;
-      opacity: 1;
+
+      opacity: 0;
       transition: all 0.5s ease;
+
+      // Just the different color of the back of the project box
+      &-1 {
+        background-color: $color-palette-1;
+        color: $color-white;
+      }
+
+      &-2 {
+        background-color: $color-palette-2;
+        color: $color-black;
+      }
     }
 
     @include hover-supported() {
@@ -85,9 +96,10 @@
 
   &__info {
     @include absCenter;
+    width: 80%;
 
     &__text {
-      margin-bottom: 5.5rem;
+      margin-bottom: 2rem;
       animation: moveInBottomLong1 0.4s ease-in-out; // This animates the header to move up giving an illusion for hovering out
 
       .project-name {
