@@ -45,13 +45,13 @@ $(window).on('scroll', function() {
 
 // for navigation bar when it's mobile size
 $(document).ready(function() {
-  $('.nav__menuicon').on('click', function() {
+  $('.nav__burger').on('click', function() {
     $('nav ul').toggleClass('showing');
   });
 });
 
 $(document).ready(function() {
-  $('.nav__menu ul li a').on('click', function() {
+  $('.nav__links ul li').on('click', function() {
     $('nav ul').toggleClass('showing');
   });
 });

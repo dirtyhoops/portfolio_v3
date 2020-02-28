@@ -3,4 +3,8 @@
   text-align: center;
   line-height: 10rem;
   margin-bottom: 10rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
 }

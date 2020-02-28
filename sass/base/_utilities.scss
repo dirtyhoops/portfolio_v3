@@ -8,9 +8,9 @@
   //   max-width: 875px;
   // }
 
-  // @include respond(phone) {
-  //   width: auto;
-  // }
+  @include respond(tab-portrait) {
+    padding: 0 2rem;
+  }
 }
 
 // Bottom Margins

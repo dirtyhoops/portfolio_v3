@@ -20,6 +20,18 @@
     // Just in case the image doesnt load
     background-color: $color-white;
 
+    @include respond(phone) {
+      flex: 0 0 100%;
+      height: 40rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(small-phone) {
+      flex: 0 0 100%;
+      height: 30rem;
+      margin-bottom: 2rem;
+    }
+
     &--front {
       width: 100%;
       height: 100%;
