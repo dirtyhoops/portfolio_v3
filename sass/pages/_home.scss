@@ -13,11 +13,11 @@
 .section-contact {
   min-height: 100vh;
   padding: 10rem 0;
-  background-color: $color-palette-5;
+  background-color: $color-palette-1-darker;
 }
 
 .section-footer {
-  height: 25rem;
-  background: rgb(41, 35, 35);
-  padding: 5rem 0;
+  height: 20rem;
+  background: $color-palette-1-darkest;
+  padding: 5rem 0 1rem;
 }

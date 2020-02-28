@@ -46,13 +46,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
   100% {
     width: 60%; } }
 
+@keyframes loadingBar-55 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 55%; } }
+
 @keyframes loadingBar-50 {
   0% {
     width: 0%; }
   100% {
     width: 50%; } }
 
-@keyframes moveInBottomLong {
+@keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(8rem); }
@@ -60,7 +66,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInTopLong {
+@keyframes moveInBottom-elastic {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem); }
+  70% {
+    opacity: 0.7;
+    transform: translateY(-0.2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
   0% {
     opacity: 0;
     transform: translateY(-8rem); }
@@ -68,19 +85,56 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInBottomLong1 {
+@keyframes moveOutTop {
   0% {
     opacity: 1; }
   100% {
     opacity: 0;
     transform: translateY(-10rem); } }
 
-@keyframes moveInTopLong1 {
+@keyframes moveOutBottom {
   0% {
     opacity: 1; }
   100% {
     opacity: 0;
     transform: translateY(10rem); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  25% {
+    opacity: 1;
+    transform: translateX(0); }
+  50% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  75% {
+    opacity: 0;
+    transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 *,
 *::after,
@@ -169,10 +223,13 @@ body {
   color: white;
   font-size: 1.8rem;
   margin-top: 2rem;
-  transition: 0.3s ease; }
+  transition: 0.2s ease;
+  animation: moveInBottom-elastic 1.3s ease-out 1s;
+  animation-fill-mode: backwards; }
   .button-header:hover {
     background-color: #ff1654;
-    border-color: #ff1654; }
+    border-color: #ff1654;
+    transform: translateY(-2px); }
 
 .main-header {
   height: 10rem;
@@ -249,6 +306,9 @@ body {
     .skills__percent--restfulapi {
       width: 70%;
       animation: loadingBar-70 1.5s ease-out; }
+    .skills__percent--photoshop {
+      width: 55%;
+      animation: loadingBar-55 1.5s ease-out; }
   .skills__text--name {
     font-size: 1.2rem;
     margin-left: 1rem; }
@@ -277,27 +337,34 @@ body {
 .footer__icon {
   height: 5rem;
   width: 5rem;
-  background: pink;
+  background: #0e2d3b;
   text-align: center;
   line-height: 5rem;
-  border-radius: 15px; }
+  border-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease; }
   .footer__icon p {
     font-size: 2.5rem; }
+  .footer__icon:hover {
+    background: #97d1c7;
+    transform: translateY(3px); }
+    .footer__icon:hover p {
+      color: #000000;
+      animation: moveInRotate 0.3s ease; }
+
+.footer__copyright {
+  margin-top: 4rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3rem; }
 
 .header {
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/heroiamge-1.jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
-  .header__overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 2;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0; }
   .header__heading {
     position: absolute;
     top: 50%;
@@ -307,9 +374,15 @@ body {
     z-index: 3;
     text-align: center; }
     .header__heading h1 {
-      font-size: 5rem; }
+      font-size: 5rem;
+      animation: moveInLeft 1.2s ease-out 0.5s;
+      animation-fill-mode: backwards; }
+      .header__heading h1 span {
+        color: #ff1654; }
     .header__heading h3 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      animation: moveInRight 1.2s ease-out 0.5s;
+      animation-fill-mode: backwards; }
 
 .project__container {
   width: 100%;
@@ -364,9 +437,9 @@ body {
     .project__box:hover .project__box--back {
       opacity: 1; }
       .project__box:hover .project__box--back .project__info__text {
-        animation: moveInTopLong 0.4s ease-in-out; }
+        animation: moveInTop 0.4s ease-in-out; }
       .project__box:hover .project__box--back .button-project {
-        animation: moveInBottomLong 0.4s ease-in-out; } }
+        animation: moveInBottom 0.4s ease-in-out; } }
 
 .project__info {
   position: absolute;
@@ -376,17 +449,15 @@ body {
   width: 80%; }
   .project__info__text {
     margin-bottom: 2rem;
-    animation: moveInBottomLong1 0.4s ease-in-out; }
+    animation: moveOutTop 0.4s ease-in-out; }
     .project__info__text .project-name {
-      animation: moveInBottomLong1 0.4s ease-in-out;
       font-weight: bold;
       font-size: 1.9rem; }
     .project__info__text .project-stack {
-      animation: moveInBottomLong1 0.4s ease-in-out;
       font-size: 1.4rem; }
 
 .button-project {
-  animation: moveInTopLong1 0.4s ease-in-out; }
+  animation: moveOutBottom 0.4s ease-in-out; }
 
 .section-about {
   min-height: 100vh;
@@ -401,9 +472,9 @@ body {
 .section-contact {
   min-height: 100vh;
   padding: 10rem 0;
-  background-color: #ff1654; }
+  background-color: #0a222c; }
 
 .section-footer {
-  height: 25rem;
-  background: #292323;
-  padding: 5rem 0; }
+  height: 20rem;
+  background: #07171e;
+  padding: 5rem 0 1rem; }

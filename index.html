@@ -33,9 +33,8 @@
 
     <!-- HEADER -->
     <header class="header">
-      <div class="header__overlay"></div>
       <div class="header__heading">
-        <h1>Hello! I'm Daryll Osis</h1>
+        <h1>Hi! I'm <span>Daryll Osis</span></h1>
         <h3>I'm a full-stack web developer</h3>
         <button class="button-header" id="button-header">
           View my projects
@@ -130,6 +129,14 @@
                     <p class="skills__text--name">REST API</p>
                   </div>
                   <p class="skills__text--percent">70%</p>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__bar">
+                  <div class="skills__percent skills__percent--photoshop">
+                    <p class="skills__text--name">Photoshop</p>
+                  </div>
+                  <p class="skills__text--percent">55%</p>
                 </div>
               </div>
             </div>
@@ -297,15 +304,27 @@
     <div class="section-footer">
       <div class="footer container">
         <div class="footer__icons-container">
-          <div class="footer__icon">
+          <div
+            class="footer__icon"
+            onclick="window.location.href = 'https://www.linkedin.com/in/daryllosis/';"
+          >
             <p><i class="fab fa-linkedin-in"></i></p>
           </div>
-          <div class="footer__icon">
+          <div
+            class="footer__icon"
+            onclick="window.location.href = 'https://github.com/dirtyhoops';"
+          >
             <p><i class="fab fa-github"></i></p>
           </div>
-          <div class="footer__icon">
+          <div
+            class="footer__icon"
+            onclick="window.location.href = 'https://instagram.com/https://www.instagram.com/dirtyhoops/';"
+          >
             <p><i class="fab fa-instagram"></i></p>
           </div>
+        </div>
+        <div class="footer__copyright">
+          <p>&#0169; 2020 Powered and Designed by Daryll Osis</p>
         </div>
       </div>
     </div>

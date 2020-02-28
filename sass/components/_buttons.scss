@@ -15,11 +15,14 @@
     color: white;
     font-size: 1.8rem;
     margin-top: 2rem;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
+    animation: moveInBottom-elastic 1.3s ease-out 1s;
+    animation-fill-mode: backwards;
 
     &:hover {
       background-color: $color-palette-5;
       border-color: $color-palette-5;
+      transform: translateY(-2px);
     }
   }
 }

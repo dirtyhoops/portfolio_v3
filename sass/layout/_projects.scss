@@ -84,11 +84,11 @@
         opacity: 1;
 
         .project__info__text {
-          animation: moveInTopLong 0.4s ease-in-out;
+          animation: moveInTop 0.4s ease-in-out;
         }
 
         .button-project {
-          animation: moveInBottomLong 0.4s ease-in-out;
+          animation: moveInBottom 0.4s ease-in-out;
         }
       }
     }
@@ -100,16 +100,14 @@
 
     &__text {
       margin-bottom: 2rem;
-      animation: moveInBottomLong1 0.4s ease-in-out; // This animates the header to move up giving an illusion for hovering out
+      animation: moveOutTop 0.4s ease-in-out; // This animates the header to move up giving an illusion for hovering out
 
       .project-name {
-        animation: moveInBottomLong1 0.4s ease-in-out; // This animates the header to move up giving an illusion for hovering out
         font-weight: bold;
         font-size: 1.9rem;
       }
 
       .project-stack {
-        animation: moveInBottomLong1 0.4s ease-in-out; // This animates the header to move up giving an illusion for hovering out
         font-size: 1.4rem;
       }
     }
@@ -117,5 +115,5 @@
 }
 
 .button-project {
-  animation: moveInTopLong1 0.4s ease-in-out; // This animates the button to move down giving an illusion for hovering out
+  animation: moveOutBottom 0.4s ease-in-out; // This animates the button to move down giving an illusion for hovering out
 }

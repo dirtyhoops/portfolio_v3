@@ -9,13 +9,33 @@
   &__icon {
     height: 5rem;
     width: 5rem;
-    background: pink;
+    background: $color-palette-1-dark;
     text-align: center;
     line-height: 5rem;
     border-radius: 15px;
+    color: $color-white;
+    cursor: pointer;
+    transition: 0.2s ease;
 
     & p {
       font-size: 2.5rem;
     }
+
+    &:hover {
+      background: $color-palette-2-light;
+      transform: translateY(3px);
+
+      & p {
+        color: $color-black;
+        animation: moveInRotate 0.3s ease;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 4rem;
+    color: $color-white;
+    text-align: center;
+    font-size: 1.3rem;
   }
 }

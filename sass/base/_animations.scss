@@ -49,6 +49,16 @@
   }
 }
 
+@keyframes loadingBar-55 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+
 @keyframes loadingBar-50 {
   0% {
     width: 0%;
@@ -59,8 +69,9 @@
   }
 }
 
-// same as moveInBottom but the starting point is lower. translateY(8rem)
-@keyframes moveInBottomLong {
+// MOVES IN/OUT/LEFT/RIGHT
+
+@keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(8rem);
@@ -72,7 +83,24 @@
   }
 }
 
-@keyframes moveInTopLong {
+@keyframes moveInBottom-elastic {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+
+  70% {
+    opacity: 0.7;
+    transform: translateY(-0.2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
   0% {
     opacity: 0;
     transform: translateY(-8rem);
@@ -84,8 +112,7 @@
   }
 }
 
-// This is for after a hover out of the project card
-@keyframes moveInBottomLong1 {
+@keyframes moveOutTop {
   0% {
     opacity: 1;
   }
@@ -96,7 +123,7 @@
   }
 }
 
-@keyframes moveInTopLong1 {
+@keyframes moveOutBottom {
   0% {
     opacity: 1;
   }
@@ -104,5 +131,65 @@
   100% {
     opacity: 0;
     transform: translateY(10rem);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// move from the right to left to right to destination
+@keyframes moveInRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
