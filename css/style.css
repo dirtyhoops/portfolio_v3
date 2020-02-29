@@ -165,7 +165,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -173,7 +173,7 @@ body {
 
 .heading-primary {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase; }
 
 .heading-secondary {
@@ -441,6 +441,26 @@ body {
     .quality__box img {
       width: 60%; }
 
+.contact {
+  color: white; }
+  .contact__form__container {
+    width: 60rem;
+    margin: 0 auto;
+    background: pink; }
+    .contact__form__container form {
+      width: 50rem;
+      padding: 1rem;
+      margin: 0 auto; }
+      .contact__form__container form input {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 5px 10px; }
+      .contact__form__container form textarea {
+        width: 100%;
+        resize: none;
+        font-size: 2.1rem;
+        padding: 5px 10px; }
+
 .footer__icons-container {
   display: flex;
   width: 25rem;
@@ -528,6 +548,12 @@ body {
         display: inline-block;
         text-align: center;
         cursor: pointer; }
+        .nav__links ul li:not(:last-child) {
+          padding: 0 2rem;
+          margin: 0 0.5rem; }
+        .nav__links ul li:last-child {
+          padding-left: 2rem;
+          margin-left: 0.5rem; }
   .nav__burger {
     flex: 0 0 0%;
     text-align: right;
