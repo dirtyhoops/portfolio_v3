@@ -5,4 +5,10 @@
 5. CHANGE the color of section-project and project__box--back from ALICEBLUE to WHATEVER LOOKS GOOD (PALETTE RELATED)
 
 6. MAKE THE BACK OF THE PROJECT DIFFERENT COLOR (PALLETE COLOR)
-7. ADD Shadow to project box 
+
+7. MAKE THE NAVBAR PRETTY, MOBILE PRETTIER
+8. Finalized the hero image and the header
+9. make the contact me working
+10. animation on main headers
+11. GSAP
+

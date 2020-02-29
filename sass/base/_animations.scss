@@ -193,3 +193,93 @@
     transform: translate(0);
   }
 }
+
+// just a pulse that spreads
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0px rgba($color-palette-1-dark, 0.6);
+    background: rgba($color-palette-1-dark, 0.6);
+  }
+
+  to {
+    box-shadow: 0 0 0 1000px rgba($color-palette-1-dark, 0);
+    background: rgba($color-palette-1-dark, 0);
+  }
+}
+
+// For Menu Icon burger
+@keyframes openTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes closedTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes closedMid {
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes openBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes closedBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}

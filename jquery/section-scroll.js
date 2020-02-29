@@ -34,12 +34,12 @@ $(document).ready(function() {
   });
 });
 
-// The NavBar darkens on the very first scroll
+// The NavBar darkens on the very first scroll down
 $(window).on('scroll', function() {
   if ($(window).scrollTop() > 20) {
-    $('nav').addClass('dark');
+    $('.nav').addClass('scrolled');
   } else {
-    $('nav').removeClass('dark');
+    $('.nav').removeClass('scrolled');
   }
 });
 
@@ -53,12 +53,5 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.nav__links ul li').on('click', function() {
     $('nav ul').toggleClass('showing');
-  });
-});
-
-// for burger. It changes the active state
-$(document).ready(function() {
-  $('.nav__burger').on('click', function() {
-    $('.hamburger').toggleClass('is-active');
   });
 });

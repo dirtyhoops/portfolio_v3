@@ -30,23 +30,24 @@
   <body>
     <!-- NAVIGATION BAR -->
     <nav class="nav">
-      <div class="nav__container container-fluid">
-        <div class="nav__logo"><p id="link-home">DO</p></div>
-        <div class="nav__links">
-          <ul>
-            <li id="link-about">About</li>
-            <li id="link-project">Projects</li>
-            <li id="link-contact">Contact Me</li>
-          </ul>
-        </div>
-        <div class="nav__burger">
-          <button class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
+      <div class="nav__logo">
+        <a id="link-home" href="#">DO</a>
       </div>
+      <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
+      <label for="nav__menu__btn" class="nav__menu__icon">
+        <span class="nav__menu__icon__line"></span>
+      </label>
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a id="link-about" href="#">About</a>
+        </li>
+        <li class="nav__link">
+          <a id="link-project" href="#">Projects</a>
+        </li>
+        <li class="nav__link">
+          <a id="link-contact" href="#">Contact</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- HEADER -->
