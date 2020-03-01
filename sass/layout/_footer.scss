@@ -38,4 +38,26 @@
     text-align: center;
     font-size: 1.3rem;
   }
+
+  @include respond(phone) {
+    &__icons-container {
+      width: 32rem;
+      margin: 0 auto;
+    }
+
+    &__icon {
+      height: 7rem;
+      width: 7rem;
+      line-height: 7rem;
+
+      & p {
+        font-size: 3.5rem;
+      }
+    }
+
+    &__copyright {
+      margin-top: 4rem;
+      font-size: 1.5rem;
+    }
+  }
 }

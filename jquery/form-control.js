@@ -11,10 +11,12 @@ $(document).ready(function() {
 // Removes the 'active' class when the use focous out of the input
 $(document).ready(function() {
   $('.form-input').on('focusout', function() {
-    $(this)
-      .parent()
-      .find('label')
-      .removeClass('active');
+    if (!this.value) {
+      $(this)
+        .parent()
+        .find('label')
+        .removeClass('active');
+    }
   });
 });
 
@@ -31,9 +33,11 @@ $(document).ready(function() {
 // Removes the 'active' class when the use focous out of the textarea
 $(document).ready(function() {
   $('.form-textarea').on('focusout', function() {
-    $(this)
-      .parent()
-      .find('label')
-      .removeClass('active');
+    if (!this.value) {
+      $(this)
+        .parent()
+        .find('label')
+        .removeClass('active');
+    }
   });
 });

@@ -42,16 +42,3 @@ $(window).on('scroll', function() {
     $('.nav').removeClass('scrolled');
   }
 });
-
-// for navigation bar when it's mobile size
-$(document).ready(function() {
-  $('.nav__burger').on('click', function() {
-    $('nav ul').toggleClass('showing');
-  });
-});
-
-$(document).ready(function() {
-  $('.nav__links ul li').on('click', function() {
-    $('nav ul').toggleClass('showing');
-  });
-});

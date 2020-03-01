@@ -290,6 +290,16 @@ body {
     background-color: #ff1654;
     border-color: #ff1654;
     transform: translateY(-2px); }
+  @media (max-width: 37.5em) {
+    .button-header {
+      padding: 1.5rem 3rem;
+      border: 2px solid #ffffff;
+      color: white;
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      transition: 0.2s ease;
+      animation: moveInBottom-elastic 1.3s ease-out 1s;
+      animation-fill-mode: backwards; } }
 
 .hamburger {
   padding: 4px 0 0 0;
@@ -496,41 +506,40 @@ body {
 .contact {
   color: white; }
   .contact__form__container {
-    width: 90%;
-    max-width: 55rem;
+    width: 95%;
+    max-width: 60rem;
     margin: 0 auto;
-    padding: 2rem; }
+    padding: 1rem; }
 
 .contact-form {
-  width: 90%;
+  width: 100%;
   margin: 0 auto; }
 
 .form-group {
-  margin-bottom: 0.5rem;
   position: relative;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 25px; }
   .form-group-right {
+    margin-top: -15px;
     text-align: right; }
 
 .form-label {
   color: #aaaaaa;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
   top: 0;
+  z-index: 111;
   margin: 10px;
   padding: 0 10px;
-  background-color: #0e2d3b;
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out; }
 
 .form-input {
   width: 100%;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 13px;
+  padding: 15px;
   color: #ffffff;
   background-color: #081e27;
-  border: #07171e;
   border: 1px solid #b2dbbf; }
   .form-input:focus {
     outline: none; }
@@ -538,7 +547,7 @@ body {
 .form-textarea {
   width: 100%;
   resize: none;
-  font-size: 20px;
+  font-size: 13px;
   padding: 5px 10px;
   color: #ffffff;
   background-color: #081e27;
@@ -547,14 +556,16 @@ body {
     outline: none; }
 
 .form-button {
-  font-size: 1.5rem;
+  font-size: 13px;
   padding: 1.3rem;
+  text-transform: uppercase;
   background: #b2dbbf;
   border: 1px solid #07171e; }
 
 .active {
-  top: -25px;
-  font-size: 20px;
+  top: -32px;
+  left: -15px;
+  font-size: 12px;
   font-weight: 900;
   letter-spacing: 4px; }
 
@@ -589,9 +600,23 @@ body {
   text-align: center;
   font-size: 1.3rem; }
 
+@media (max-width: 37.5em) {
+  .footer__icons-container {
+    width: 32rem;
+    margin: 0 auto; }
+  .footer__icon {
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem; }
+    .footer__icon p {
+      font-size: 3.5rem; }
+  .footer__copyright {
+    margin-top: 4rem;
+    font-size: 1.5rem; } }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/heroiamge-1.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/heroiamge-1.jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
@@ -604,6 +629,9 @@ body {
     z-index: 3;
     text-align: center;
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .header__heading {
+        top: 40%; } }
     .header__heading h1 {
       font-size: 5rem;
       animation: moveInLeft 1.2s ease-out 0.5s;
@@ -665,15 +693,14 @@ body {
     display: flex;
     list-style: none; }
   .nav__link {
+    margin: 0.2rem;
+    padding: 1rem 2rem;
     transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .nav__link:nth-of-type(2) {
       transition-delay: 0.1s; }
     .nav__link:nth-of-type(3) {
       transition-delay: 0.2s; }
-    .nav__link a {
-      margin: 0.2rem;
-      padding: 1rem 2rem; }
-    .nav__link a:hover {
+    .nav__link:hover {
       background: #ff1654; }
   .nav.scrolled {
     height: 6rem;
@@ -736,10 +763,9 @@ body {
         opacity: 0;
         transform: translateX(100%);
         width: 100%;
-        text-align: center; }
-        .nav__link a {
-          display: block;
-          padding: 3rem 0; } }
+        text-align: center;
+        display: block;
+        padding: 3rem 0; } }
 
 .project__container {
   width: 100%;
@@ -814,6 +840,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%; }
+  @media (max-width: 37.5em) {
+    .project__info {
+      top: 40%; } }
   .project__info__text {
     margin-bottom: 2rem;
     animation: moveOutTop 0.4s ease-in-out; }
@@ -844,4 +873,4 @@ body {
 .section-footer {
   height: 20rem;
   background: #0a222c;
-  padding: 5rem 0 1rem; }
+  padding: 5rem 0 1rem 0; }
