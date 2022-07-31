@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+    />
 
     <!-- for font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -19,7 +23,11 @@
     />
 
     <!-- jquery and js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="jquery/section-scroll.js"></script>
     <script src="jquery/form-control.js"></script>
 
@@ -31,309 +39,292 @@
   <body>
     <!-- NAVIGATION BAR -->
     <nav class="nav">
-      <div class="nav__logo">
-        <p id="link-home">DO</p>
+      <div class="nav__container container">
+        <div class="nav__logo">
+          <img
+            src="/img/DOlogo-white.png"
+            id="link-home"
+            class="nav__logo__image"
+            alt="logo_image"
+          />
+          <!-- <p id="link-home">DO</p> -->
+        </div>
+        <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
+        <label for="nav__menu__btn" class="nav__menu__icon">
+          <span class="nav__menu__icon__line"></span>
+        </label>
+        <ul class="nav__links">
+          <li class="nav__link" id="link-about"><a>About</a></li>
+          <li class="nav__link" id="link-project"><a>Projects</a></li>
+          <li class="nav__link" id="link-contact"><a>Connect</a></li>
+        </ul>
       </div>
-      <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
-      <label for="nav__menu__btn" class="nav__menu__icon">
-        <span class="nav__menu__icon__line"></span>
-      </label>
-      <ul class="nav__links">
-        <li class="nav__link" id="link-about">
-          <label for="nav__menu__btn">About</label>
-        </li>
-        <li class="nav__link" id="link-project">
-          <label for="nav__menu__btn">Projects </label>
-        </li>
-        <li class="nav__link" id="link-contact">
-          <label for="nav__menu__btn">Contact</label>
-        </li>
-      </ul>
     </nav>
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-      <div class="header__heading">
-        <h1>Hi! I'm <span>Daryll Osis</span></h1>
-        <h3>I'm a full-stack web developer</h3>
-        <button class="button-header" id="button-header">
-          View my projects
-        </button>
-      </div>
-    </header>
-
-    <!-- ABOUT ME SECTION -->
-    <section class="section-about" id="section-about">
-      <div class="about container">
-        <div class="main-header">
-          <p class="heading-primary">about me</p>
-        </div>
-        <div class="about__container u-margin-bottom-lg">
-          <div class="about__container--left">
-            <div class="skills">
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--html">
-                    <p class="skills__text--name">HTML</p>
-                  </div>
-                  <p class="skills__text--percent">90%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--css">
-                    <p class="skills__text--name">CSS</p>
-                  </div>
-                  <p class="skills__text--percent">90%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--javascript">
-                    <p class="skills__text--name">JavaScript</p>
-                  </div>
-                  <p class="skills__text--percent">75%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--react">
-                    <p class="skills__text--name">React</p>
-                  </div>
-                  <p class="skills__text--percent">75%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--nodejs">
-                    <p class="skills__text--name">Node.js</p>
-                  </div>
-                  <p class="skills__text--percent">65%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--mongodb">
-                    <p class="skills__text--name">MongoDB</p>
-                  </div>
-                  <p class="skills__text--percent">65%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--angular">
-                    <p class="skills__text--name">Angular</p>
-                  </div>
-                  <p class="skills__text--percent">50%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--java">
-                    <p class="skills__text--name">Java</p>
-                  </div>
-                  <p class="skills__text--percent">60%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--python">
-                    <p class="skills__text--name">Python</p>
-                  </div>
-                  <p class="skills__text--percent">50%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--restfulapi">
-                    <p class="skills__text--name">REST API</p>
-                  </div>
-                  <p class="skills__text--percent">70%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--photoshop">
-                    <p class="skills__text--name">Photoshop</p>
-                  </div>
-                  <p class="skills__text--percent">55%</p>
-                </div>
-              </div>
+    <div class="hero__wrapper">
+      <div class="hero__container container">
+        <div class="hero__container__left">
+          <div class="hero__container__left__header">
+            <p class="hero__text-name">Daryll Osis</p>
+            <p class="hero__text-title">Full-stack Developer</p>
+          </div>
+          <div class="hero__container__left__social">
+            <div class="hero__container__left__social__i">
+              <a href="https://github.com/dirtyhoops" target="_new">
+                <i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="hero__container__left__social__i">
+              <a href="https://www.linkedin.com/in/daryllosis/" target="_new">
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="hero__container__left__social__i">
+              <a href="mailto:daryllosis27@gmail.com">
+                <i class="far fa-envelope"></i
+              ></a>
             </div>
           </div>
-          <div class="about__container--right">
-            <div class="about__info__image">
-              <img src="img/profilepic.jpg" alt="aboutme-profile-picture" />
+        </div>
+        <div class="hero__container__right">
+          <img src="/img//headerImage.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="about2__wrapper" id="section-about">
+      <div class="about2__container container">
+        <!-- A LITTLE ABOUT ME!!!!!!!!!!!!!!! -->
+        <div class="about2__special container">
+          <div class="about2__special__box">
+            <p><i class="fas fa-tablet-alt"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Responsive Design</p>
             </div>
-            <p class="heading-secondary  u-margin-top-md  u-margin-bottom-sm">
-              Who Am I?
+            <p class="about2__text-description">
+              My design will work on any devices
             </p>
-            <p class="text-aboutme">
-              A self-driven individual with a passion for developing fully
-              functional web-based applications that unveils a user-friendly
-              interface and overall a great user experience. Some of my
-              strongest attributes is my ability to translate visual and written
-              designs into efficient front-end components. In addition, my
-              capacity to reconcile to new technologies, write clearly and
-              efficiently code makes me a strong candidate as a Full Stack
-              Developer.
+          </div>
+          <div class="about2__special__box">
+            <p><i class="fas fa-tachometer-alt"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Fast</p>
+            </div>
+            <p class="about2__text-description">
+              Fast load times and lag free interaction
+            </p>
+          </div>
+          <div class="about2__special__box">
+            <p><i class="far fa-keyboard"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">API</p>
+            </div>
+            <p class="about2__text-description">
+              I create and design RESTful API
+            </p>
+          </div>
+          <div class="about2__special__box">
+            <p><i class="fas fa-code"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Clean Code</p>
+            </div>
+            <p class="about2__text-description">
+              My code is easy to read and understand
             </p>
           </div>
         </div>
-        <!-- QUALITIES INSIDE ABOUT ME SECTION -->
-        <!-- <div class="quality">
-          <div class="quality__box">
-            <img src="/img/responsive-design.svg" alt="responsive icon" />
-            <p>Responsive Design</p>
-          </div>
-          <div class="quality__box">RESTful API</div>
-          <div class="quality__box">Write Clean Code</div>
-          <div class="quality__box">Fast Load Time</div>
-        </div> -->
       </div>
-    </section>
-
-    <!-- PROJECT SECTION -->
-    <section class="section-project" id="section-project">
-      <div class="project container">
-        <div class="main-header">
-          <p class="heading-primary">projects</p>
-        </div>
-        <div class="project__container">
-          <!-- HYPED GOODS PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-1"></div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Hyped Goods</p>
-                  <p class="project-stack">MERN Stack</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-hypedgoods';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- SQRATCH XCHANGE PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-6"></div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Sqratch Xchange</p>
-                  <p class="project-stack">MERN Stack</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-sqratchxchange';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- FIREHOUSE RESTAURANT PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-2"></div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">FireHouse Restaurant</p>
-                  <p class="project-stack">SASS + JQuery</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-firehouse';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- THEMOVIEDB PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-3"></div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">The MovieDB</p>
-                  <p class="project-stack">Node.js + React</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-themoviedb';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- VAPE3ONE PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-4"></div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Vape3One</p>
-                  <p class="project-stack">Java + Spring + Hibernate</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-vape3one';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- HOOP FINDER PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-5"></div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Hoop Finder</p>
-                  <p class="project-stack">Python + Django + MySQL</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#popup-hoopfinder';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="skills__wrapper">
+      <div class="skills container">
+        <p class="skills__text-header">My Skills</p>
+        <div class="skills__grid">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-js-square"></i>
+          <!-- <i class="fab fa-angular"></i> -->
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-java"></i>
+          <i class="fas fa-database"></i>
+          <div class="skills__grid__spacer"></div>
         </div>
       </div>
-    </section>
-
+    </div>
+    <div class="projects__wrapper" id="section-project">
+      <div class="projects container">
+        <p class="projects__text-header">My Projects</p>
+        <div class="projects__grid">
+          <div class="projects__grid__box">
+            <h4>Slingshot Connections</h4>
+            <p>MongoDB, NextJS, NodeJS</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://slingshotconnections.herokuapp.com/', '_blank')"
+              >
+                View Site
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>SSC Safety Central</h4>
+            <p>MERN Stack</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://slingshotsafetycentral.herokuapp.com/', '_blank')"
+              >
+                View Site
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Candidate Connections</h4>
+            <p>MERN Stack</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://candidateconnections.herokuapp.com/', '_blank')"
+              >
+                View Site
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Hyped Goods</h4>
+            <p>MERN Stack</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('http://hypedgoods-app.herokuapp.com/', '_blank')"
+              >
+                View Site
+              </button>
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/hypedgoods', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Sqratch Xchange</h4>
+            <p>MERN Stack</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/sqratchxchange', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Fire House</h4>
+            <p>HTML, SASS, JQuery</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://firehouse-restaurant.web.app/', '_blank')"
+              >
+                View Site
+              </button>
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/restaurantSite', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Mizu Menu</h4>
+            <p>ReactJS, SASS</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://www.mizumenu.com/', '_blank')"
+              >
+                View Site
+              </button>
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/MizuMenuSanJose', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Movie DB</h4>
+            <p>ReactJS, NodeJS</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://moviedb-27.firebaseapp.com/', '_blank')"
+              >
+                View Site
+              </button>
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/TheMovieDB', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Vape 3 One</h4>
+            <p>Java, Spring, Hibernate</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/vape3one', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Hoop Finder V2</h4>
+            <p>MERN Stack</p>
+            <div class="projects__grid__box__buttons">
+              <button
+                onclick=" window.open('https://github.com/dirtyhoops/HoopFinderV2', '_blank')"
+              >
+                View Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- CONTACT SECTION -->
     <section class="section-contact" id="section-contact">
       <div class="contact container">
         <div class="main-header">
-          <p class="heading-primary text-light-color">contact</p>
+          <p class="heading-primary">Contact Me</p>
         </div>
         <div class="contact__form__container">
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="https://formspree.io/dosis@csumb.edu"
+            method="POST"
+          >
             <div class="form-group">
               <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" class="form-input" />
+              <input type="text" id="name" class="form-input" name="name" />
             </div>
             <div class="form-group">
               <label for="email" class="form-label">Email</label>
-              <input type="text" id="email" class="form-input" />
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                name="_replyto"
+              />
             </div>
             <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea rows="8" id="message" class="form-textarea"></textarea>
+              <label for="message" class="form-label">Your Message</label>
+              <textarea
+                rows="8"
+                id="message"
+                class="form-textarea"
+                name="message"
+              ></textarea>
             </div>
             <div class="form-group-right">
-              <button class="form-button">Send me a message</button>
+              <button class="form-button" type="submit">Send message</button>
             </div>
           </form>
         </div>
@@ -364,7 +355,7 @@
           </div>
         </div>
         <div class="footer__copyright">
-          <p>&#0169; 2020 Powered and Designed by Daryll Osis</p>
+          <p>&#0169; 2021 Powered and Designed by Daryll Osis</p>
         </div>
       </div>
     </div>
